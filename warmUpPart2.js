@@ -1,4 +1,4 @@
-export function calculate(startValue, endValue, stepValue) {
+function calculate(startValue, endValue, stepValue) {
     // console.log("trace msg: start, end, step", startValue, endValue, stepValue)
     const endNumber = endValue;
     const stepNumber = stepValue;
@@ -13,3 +13,5 @@ export function calculate(startValue, endValue, stepValue) {
 for (var i = 0; i < 10; i++) {
     var temp = calculate(20, 3, 4);
 }
+
+module.exports = calculate;
