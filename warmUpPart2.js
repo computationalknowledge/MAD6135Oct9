@@ -1,12 +1,5 @@
-// const startNumber = 20;
-// const endNumber = 3;
-// const stepNumber = 7;
-// var sum = 0;
-// var loopCounter = startNumber;
-
-function calculate(startValue, endValue, stepValue) {
-    console.log("trace msg: start, end, step", startValue, endValue, stepValue)
-    const startNumber = startValue;
+export function calculate(startValue, endValue, stepValue) {
+    // console.log("trace msg: start, end, step", startValue, endValue, stepValue)
     const endNumber = endValue;
     const stepNumber = stepValue;
     var sum = 0;
@@ -15,4 +8,8 @@ function calculate(startValue, endValue, stepValue) {
         sum += stepNumber; // mutating a variable means to change it
     }
     return sum;
+}
+
+for (var i = 0; i < 10; i++) {
+    var temp = calculate(20, 3, 4);
 }
